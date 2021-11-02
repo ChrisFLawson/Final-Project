@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  background-size: 100%;
+  background-color: #f6201d;
+  width: 100%;
+}
+main {
+  margin: 100px auto;
+  width: 100%;
+  text-align: center;
+  color: white;
+  height: 100vh;
+}
+.NAV {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  font-size: 30px;
+}
+.GA-Logo {
+  height: 80px;
+  margin: 15px;
+}
+.buy-now {
+  width: fit-content;
+  border-radius: 30px;
+  position: fixed;
+  top: 250px;
+  right: 100px;
+  background-color: #f6201d;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 100;
+  box-shadow: 0px 2px 9px 1px black;
+  font-size: 30px;
+  transition: linear 0.3s;
+}
+.buy-now:hover {
+  background-color: black;
+  transform: scale(1.2);
+  transition: linear 0.3s;
+}
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 0.25s ease;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: 0;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.25s ease;
+}
+
+.carousel_button:hover {
+  background: rgb(83, 83, 83);
+  transition: 0.25s ease;
+}
+
+.carousel__button-left {
+  left: 60px;
+  transform: rotate(270deg);
+  z-index: 99;
+}
+.carousel__button-right {
+  right: 60px;
+  transform: rotate(90deg);
+  z-index: 99;
+}
+
+.carousel_button img {
+  width: 100px;
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgb(156, 156, 156);
+  margin: 0 50px;
+  cursor: pointer;
+}
+.carousel__indicator.current-slide {
+  background: black;
+}
+.is-hidden {
+  display: none;
+}
+.raffle-info-container {
+  max-width: 1500px;
+  margin: auto;
+}
+.RAFFLE-INFORMATION {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Take-home-container {
+  background-color: black;
+  width: 700px;
+  border-radius: 30px;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa;
+  padding: 20px;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 92px #0fa;
+}
+.raffle-title {
+  font-size: 4vmax;
+}
+.dollar-counter {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  align-items: center;
+}
+.Previous-Winners {
+  background-color: #000;
+  padding: 30px;
+}
+.section-title {
+  font-size: 4vmax;
+  text-align: center;
+}
+.winnner-info {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+#winnerList {
+  font-size: 2vmax;
+  background-color: #f6201d;
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  margin: 60px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: linear 0.3s;
+  border: 0;
+}
+#winnerList:hover {
+  background-color: #f6211d96;
+  transition: linear 0.3s;
+}
+.how-it-works-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f6201d;
+  padding: 0 0 100px 0;
+}
+/* How it Work title */
+.how-it-works-section > div > h2 {
+  font-size: 3em;
+  color: white;
+  font-weight: 700;
+}
+/* How it works image */
+#HWIMG {
+  max-width: 100%;
+  background-color: black;
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 10px 1px black;
+}
+#custom-footer {
+  width: 100%;
+  background-color: black;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  padding: 30px;
+}
+.social {
+  max-width: 100%;
+}
+#alogo {
+  max-width: 200px;
+  margin: 30px;
+}
+.RULES-OF-PLAY {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+/* Accordion CSS */
+ul {
+  list-style: none;
+}
+
+#accordion button:focus {
+  border-radius: 0px;
+  outline: none;
+}
+#accordion button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  background-color: black;
+  padding: 50px;
+  border: none;
+  color: white;
+  width: 100%;
+  font-size: 3vmax;
+  border-radius: 0px;
+  cursor: pointer;
+  border-radius: 30px !important;
+}
+#accordion li {
+  border: none;
+  width: 100%;
+}
+.acc-item-content {
+  font-size: 1.5vmax;
+}
+#accordion button::after {
+  content: "\002B";
+  font-weight: 900;
+  font-size: 3vmax;
+}
+#accordion {
+  width: 100%;
+  max-width: 1500px;
+  min-width: 275px;
+  padding-inline-start: 0;
+}
+.acc-item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+#accordion button.active:after {
+  content: "\2212";
+  font-weight: 900;
+}
+/* Controls How it Works Image orientation on smaller screens. */
+@media screen and (max-width: 767px) {
+  #HWIMG {
+    content: url("https://i.postimg.cc/gjTGFkJv/HIW-mobile-white.png");
+    max-width: 100%;
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .carousel_button img {
+    width: 40px;
+  }
+  .carousel__button-right {
+    right: 35px;
+    transform: rotate(90deg);
+    z-index: 99;
+  }
+  .carousel__button-left {
+    left: 35px;
+    transform: rotate(270deg);
+    z-index: 99;
+  }
+  .raffle-title {
+    font-size: 27px;
+  }
+  .buy-now {
+    top: 800px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+  }
+  .NAV {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .winnner-info {
+    display: block;
+  }
+  #custom-footer {
+    display: block;
+  }
+  .Take-home-container {
+    width: 400px;
+  }
+}
